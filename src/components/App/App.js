@@ -14,6 +14,7 @@ class App extends Component{
       tiles: [],
       toBeCleared: null
     }
+  }
 
     startGame(numTiles){
       this.setState((state)=>{
@@ -23,7 +24,7 @@ class App extends Component{
         tiles: createTiles(this.state.numTiles)
       })
     }
-  }
+
   render() {
   return (
     <div className="App">
